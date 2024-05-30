@@ -1,0 +1,77 @@
+// colors 
+
+$accent-clr : #E26F46;
+
+$bg-light-clr : #FFF5EE;
+$bg-dark-clr : #EBD6C7;
+
+$text-dark-clr : #2E1B14;
+$text-light-clr : #6C3723;
+
+$low-opacity-clr : #ebd6c786;
+
+$dark-mix : linear-gradient(45deg, #2E1B14, #6C3723);
+$light-mix : linear-gradient(45deg, #FFF5EE, #EBD6C7);
+
+
+// font-size 
+
+$fz-base : 16px; /* custom size */
+$fz-scale : 1.250; /* custom scale */
+
+$fz-p : $fz-base;
+$fz-h6 : $fz-base * $fz-scale;
+$fz-h5 : $fz-h6 * $fz-scale;
+$fz-h4 : $fz-h5 * $fz-scale;
+$fz-h3 : $fz-h4 * $fz-scale;
+$fz-h2 : $fz-h3 * $fz-scale;
+$fz-h1 : $fz-h2 * $fz-scale;
+
+
+// // line-height
+
+$line-title : $fz-h2   *  1.15;
+$line-sub-title : $fz-h4   *  1.25;
+$line-paragraph : $fz-p   *  1.4;
+
+// // font-weight
+
+$fw-thin : 200;
+$fw-regular : 400;
+$fw-semibold : 600;
+$fw-bold : 800;
+
+// // // font-family
+
+$ff-body :  "Lato", sans-serif;
+$ff-title : "Tenor Sans", sans-serif;
+
+
+// // // border-radius
+
+$br-3 : 3px;
+$br-8 : 8px;
+$br-20 : 20px;
+$br-50 : 50%;
+$br-150 : 150px;
+
+// // // spacing
+
+$s-8 : 0.5rem;
+$s-16 : 1rem;
+$s-24 : 1.5rem;
+$s-32 : 2rem;
+$s-40 : 2.5rem;
+$s-48 : 3rem;
+$s-56 : 3.5rem;
+$s-64 : 4rem;
+$s-72 : 4.5rem;
+$s-80 : 5rem;
+
+
+// // // transtiton
+
+$transition : all ease 0.3s;
+
+
+
