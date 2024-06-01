@@ -282,6 +282,7 @@
 
     #hero-section{
         // background-color: orange;
+        min-height: auto;
 
 
         .hero-wrap{
@@ -316,7 +317,7 @@
 
 @media screen and (max-width : 600px) {
     #hero-section{
-
+        min-height: auto;
         .hero-wrap{
             flex-direction: column;
             padding: 48px $s-32;
@@ -341,7 +342,7 @@
 @media screen and (max-width : 480px) {
     #hero-section{
         height: auto;
-
+        min-height: auto;
         .hero-wrap{
             flex-direction: column;
             padding: 48px $s-16;
@@ -510,6 +511,7 @@
     #our-story{
         // background-color: orange;
         height: auto;
+        min-height: auto;
         grid-template-rows: 60vh 50vh;
     }
 }
@@ -519,6 +521,7 @@
     #our-story{
         // background-color: hotpink;
         height: auto;
+        min-height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         padding: 0px 32px;
@@ -527,6 +530,7 @@
 
 @media screen and (max-width : 480px) {
     #our-story{
+        min-height: auto;
         // background-color: coral;
         height: auto;
         grid-template-columns: 1fr;
@@ -660,6 +664,7 @@
         padding: 32px 24px;
         // background-color: orange;
         height: auto;
+        min-height: auto;
 
         .menu-wrap{
             grid-template-columns: 1fr; 
@@ -681,6 +686,7 @@
         padding: 48px 16px;
         // background-color: orange;
         height: auto;
+        min-height: auto;
 
         .menu-wrap{
             grid-template-columns: 1fr; 
@@ -702,6 +708,7 @@
         // background-color: orange;
         padding: 48px 16px;
         height: auto;
+        min-height: auto;
 
         .menu-wrap{
             grid-template-columns: 1fr; 
@@ -816,6 +823,7 @@
 @media screen and (max-width : 600px){
     #review{
         padding: 48px 16px;
+        min-height: auto;
         h2{
             padding-bottom: 4rem;
         }
@@ -961,4 +969,81 @@
             }
         }
     }
+}
+
+@media screen and (max-width : 1000px) {
+    #contact{  
+        min-height: auto;
+        .contact-wrap{
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+
+            .contact-form{
+                margin: 0% auto;
+                flex-direction: column;
+                align-items: center;
+                // border: 4px solid brown;
+                max-width: 400px;
+
+                h5{
+                    margin: 1rem 0px 2rem 0px;
+                    text-align: center;
+                }
+
+                form{
+                    margin: 0px auto;
+                    // border: 4px solid brown;
+                    
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 600px) {
+
+    #contact{
+        min-height: auto;
+        padding: $s-16;
+
+        .contact-wrap{
+
+            .contact-form{
+                
+                min-width: 280px;
+                width: 80%;
+
+                form{
+                    input[type="text"],
+                    textarea,
+                    #send-btn{
+                        min-width: 280px;
+                        width: 80%;
+                    }
+                }
+                
+            }
+
+            .contact-map{
+                flex-direction: column;
+                gap: 2.5rem;
+
+                .map-txt{
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .map{
+                    width: 80vw;
+                    overflow: hidden;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+
 }

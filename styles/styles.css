@@ -562,6 +562,9 @@ blockquote::after {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) { /* tablet */
+  #hero-section {
+    min-height: auto;
+  }
   #hero-section .hero-wrap {
     padding: 0px 2rem;
     flex-wrap: wrap;
@@ -579,6 +582,9 @@ blockquote::after {
   }
 }
 @media screen and (max-width: 600px) {
+  #hero-section {
+    min-height: auto;
+  }
   #hero-section .hero-wrap {
     flex-direction: column;
     padding: 48px 2rem;
@@ -597,6 +603,7 @@ blockquote::after {
 @media screen and (max-width: 480px) {
   #hero-section {
     height: auto;
+    min-height: auto;
   }
   #hero-section .hero-wrap {
     flex-direction: column;
@@ -745,12 +752,14 @@ blockquote::after {
 @media screen and (max-width: 860px) {
   #our-story {
     height: auto;
+    min-height: auto;
     grid-template-rows: 60vh 50vh;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   #our-story {
     height: auto;
+    min-height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     padding: 0px 32px;
@@ -758,6 +767,7 @@ blockquote::after {
 }
 @media screen and (max-width: 480px) {
   #our-story {
+    min-height: auto;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -883,6 +893,7 @@ blockquote::after {
   #menu-section {
     padding: 32px 24px;
     height: auto;
+    min-height: auto;
   }
   #menu-section .menu-wrap {
     grid-template-columns: 1fr;
@@ -898,6 +909,7 @@ blockquote::after {
   #menu-section {
     padding: 48px 16px;
     height: auto;
+    min-height: auto;
   }
   #menu-section .menu-wrap {
     grid-template-columns: 1fr;
@@ -913,6 +925,7 @@ blockquote::after {
   #menu-section {
     padding: 48px 16px;
     height: auto;
+    min-height: auto;
   }
   #menu-section .menu-wrap {
     grid-template-columns: 1fr;
@@ -1009,6 +1022,7 @@ blockquote::after {
 @media screen and (max-width: 600px) {
   #review {
     padding: 48px 16px;
+    min-height: auto;
   }
   #review h2 {
     padding-bottom: 4rem;
@@ -1143,4 +1157,60 @@ blockquote::after {
 }
 #contact .contact-wrap .contact-map .map {
   border: 2px solid #2E1B14;
+}
+
+@media screen and (max-width: 1000px) {
+  #contact {
+    min-height: auto;
+  }
+  #contact .contact-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  #contact .contact-wrap .contact-form {
+    margin: 0% auto;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+  }
+  #contact .contact-wrap .contact-form h5 {
+    margin: 1rem 0px 2rem 0px;
+    text-align: center;
+  }
+  #contact .contact-wrap .contact-form form {
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact {
+    min-height: auto;
+    padding: 1rem;
+  }
+  #contact .contact-wrap .contact-form {
+    min-width: 280px;
+    width: 80%;
+  }
+  #contact .contact-wrap .contact-form form input[type=text],
+  #contact .contact-wrap .contact-form form textarea,
+  #contact .contact-wrap .contact-form form #send-btn {
+    min-width: 280px;
+    width: 80%;
+  }
+  #contact .contact-wrap .contact-map {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  #contact .contact-wrap .contact-map .map-txt {
+    align-items: center;
+    text-align: center;
+  }
+  #contact .contact-wrap .contact-map .map {
+    width: 80vw;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
