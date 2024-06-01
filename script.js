@@ -32,3 +32,26 @@ function adjustForDesktopMode() {
   window.addEventListener('resize', adjustForDesktopMode);
   window.addEventListener('load', adjustForDesktopMode);
 
+
+
+
+
+
+  // JavaScript to change the logo when the screen size is below 480px
+  window.addEventListener('resize', function() {
+    var mainLogo = document.getElementById('main-logo');
+    var mobileLogo = document.getElementById('mobile-logo');
+    if (window.innerWidth <= 480) {
+        mainLogo.style.display = 'none';
+        mobileLogo.style.display = 'block';
+    } else {
+        mainLogo.style.display = 'block';
+        mobileLogo.style.display = 'none';
+    }
+});
+
+
+
+
+
+
